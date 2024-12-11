@@ -30,7 +30,7 @@ module.exports.getAllGame = () => {
             else resolve(results);
         }
         connection.query(
-            `SELECT * FROM GAME`,
+            `SELECT tag, name, IP, Port FROM GAME`,
             func
         )
     })
